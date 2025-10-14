@@ -1,0 +1,50 @@
+# Osiris Team Project Configuration
+
+shell:
+  name: "Osiris"
+  version: "0.1.0-team"
+  prompt_symbol: "osiris>"
+  history_file: ".osiris_history"
+  max_history: 1000
+
+# Kshitij: Safety Gate Configuration
+safety:
+  enabled: true
+  sandbox_mode: false
+  dangerous_commands:
+    - "rm -rf /"
+    - "dd if="
+    - "mkfs"
+    - ":(){ :|:& };:"
+  sensitive_paths:
+    - "/etc"
+    - "/boot"
+    - "/sys"
+    - "/proc"
+    - "C:\\Windows"
+    - "C:\\Program Files"
+  require_confirmation:
+    - "rm"
+    - "chmod"
+    - "chown"
+    - "kill"
+
+# Prabal: Efficiency Metrics Configuration
+system_monitoring:
+  enabled: true
+  thresholds:
+    cpu_high: 80.0  # percentage
+    memory_high: 85.0  # percentage
+    disk_high: 90.0  # percentage
+
+# Shiv: Command Execution Configuration
+command_execution:
+  timeout: 300  # seconds
+  shell: true
+  capture_output: true
+  use_wsl: true  # Enable WSL for Linux commands on Windows (development mode)
+
+# Logging Configuration
+logging:
+  level: "INFO"
+  file: "osiris.log"

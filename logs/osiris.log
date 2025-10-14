@@ -1,0 +1,387 @@
+2025-10-07 23:55:04,396 - Osiris.CLI - INFO - CLI Framework initialized: Osiris v0.1.0-team
+2025-10-07 23:55:04,456 - Osiris.CommandExecutor - INFO - CommandExecutor initialized
+2025-10-07 23:55:04,461 - Osiris.SafetyGate - INFO - SafetyGate initialized (enabled: True, sandbox: False)
+2025-10-07 23:55:04,465 - Osiris.SystemMonitor - INFO - SystemMonitor initialized with psutil
+2025-10-07 23:55:04,469 - Osiris - INFO - Osiris Team Shell initialized successfully
+2025-10-07 23:55:19,616 - Osiris - INFO - Executing: Execute list
+2025-10-07 23:55:19,617 - Osiris.CommandExecutor - INFO - Executing command: list
+2025-10-07 23:55:19,649 - Osiris.CommandExecutor - ERROR - Command failed: list (exit code: 1)
+2025-10-07 23:55:19,649 - Osiris.CommandExecutor - ERROR - Error output: 'list' is not recognized as an internal or external command,
+operable program or batch file.
+
+2025-10-07 23:55:25,419 - Osiris - INFO - Executing: List directory contents
+2025-10-07 23:55:25,420 - Osiris.CommandExecutor - INFO - Executing command: ls -a
+2025-10-07 23:55:25,451 - Osiris.CommandExecutor - ERROR - Command failed: ls -a (exit code: 1)
+2025-10-07 23:55:25,452 - Osiris.CommandExecutor - ERROR - Error output: 'ls' is not recognized as an internal or external command,
+operable program or batch file.
+
+2025-10-07 23:55:41,215 - Osiris - INFO - Executing: List directory contents
+2025-10-07 23:55:41,216 - Osiris.CommandExecutor - INFO - Executing command: ls
+2025-10-07 23:55:41,245 - Osiris.CommandExecutor - ERROR - Command failed: ls (exit code: 1)
+2025-10-07 23:55:41,246 - Osiris.CommandExecutor - ERROR - Error output: 'ls' is not recognized as an internal or external command,
+operable program or batch file.
+
+2025-10-07 23:55:55,679 - Osiris - INFO - Executing: Create directory
+2025-10-07 23:55:55,679 - Osiris.CommandExecutor - INFO - Executing command: mkdir
+2025-10-07 23:55:55,705 - Osiris.CommandExecutor - ERROR - Command failed: mkdir (exit code: 1)
+2025-10-07 23:55:55,705 - Osiris.CommandExecutor - ERROR - Error output: The syntax of the command is incorrect.
+
+2025-10-08 00:04:04,864 - Osiris.CLI - INFO - CLI Framework initialized: Osiris v0.1.0-team
+2025-10-08 00:04:10,146 - Osiris.CommandExecutor - WARNING - WSL not found - using command translation layer
+2025-10-08 00:04:10,147 - Osiris.CommandExecutor - INFO - CommandExecutor initialized
+2025-10-08 00:04:10,151 - Osiris.SafetyGate - INFO - SafetyGate initialized (enabled: True, sandbox: False)
+2025-10-08 00:04:10,155 - Osiris.SystemMonitor - INFO - SystemMonitor initialized with psutil
+2025-10-08 00:04:10,159 - Osiris - INFO - Osiris Team Shell initialized successfully
+2025-10-08 00:04:18,879 - Osiris - INFO - Executing: List directory contents
+2025-10-08 00:04:18,880 - Osiris.CommandExecutor - INFO - Executing command: ls
+2025-10-08 00:04:18,913 - Osiris.CommandExecutor - ERROR - Command failed: ls (exit code: 1)
+2025-10-08 00:04:18,914 - Osiris.CommandExecutor - ERROR - Error output: 'ls' is not recognized as an internal or external command,
+operable program or batch file.
+
+2025-10-08 00:09:15,529 - Osiris.CLI - INFO - CLI Framework initialized: Osiris v0.1.0-team
+2025-10-08 00:09:20,746 - Osiris.CommandExecutor - WARNING - WSL not found - using command translation layer
+2025-10-08 00:09:20,747 - Osiris.CommandExecutor - INFO - CommandExecutor initialized
+2025-10-08 00:09:20,752 - Osiris.SafetyGate - INFO - SafetyGate initialized (enabled: True, sandbox: False)
+2025-10-08 00:09:20,760 - Osiris.SystemMonitor - INFO - SystemMonitor initialized with psutil
+2025-10-08 00:09:20,764 - Osiris - INFO - Osiris Team Shell initialized successfully
+2025-10-08 00:13:46,581 - Osiris - INFO - Executing: List directory contents
+2025-10-08 00:13:46,582 - Osiris.CommandExecutor - INFO - Executing command: ls
+2025-10-08 00:13:46,614 - Osiris.CommandExecutor - ERROR - Command failed: ls (exit code: 1)
+2025-10-08 00:13:46,614 - Osiris.CommandExecutor - ERROR - Error output: 'ls' is not recognized as an internal or external command,
+operable program or batch file.
+
+2025-10-08 00:19:55,143 - Osiris.CLI - INFO - CLI Framework initialized: Osiris v0.1.0-team
+2025-10-08 00:20:00,346 - Osiris.CommandExecutor - WARNING - WSL not found - using command translation layer
+2025-10-08 00:20:00,348 - Osiris.CommandExecutor - INFO - CommandExecutor initialized
+2025-10-08 00:20:00,356 - Osiris.SafetyGate - INFO - SafetyGate initialized (enabled: True, sandbox: False)
+2025-10-08 00:20:00,369 - Osiris.SystemMonitor - INFO - SystemMonitor initialized with psutil
+2025-10-08 00:20:00,373 - Osiris - INFO - Osiris Team Shell initialized successfully
+2025-10-08 00:20:12,113 - Osiris - INFO - Executing: List directory contents
+2025-10-08 00:20:12,114 - Osiris.CommandExecutor - INFO - Translated: 'ls' -> 'Get-ChildItem'
+2025-10-08 00:20:12,115 - Osiris.CommandExecutor - INFO - Executing via WSL: ls
+2025-10-08 00:20:12,559 - Osiris.CommandExecutor - INFO - Command succeeded: ls (duration: 0.45s)
+2025-10-08 00:20:17,416 - Osiris - INFO - Executing: List directory contents
+2025-10-08 00:20:17,416 - Osiris.CommandExecutor - INFO - Translated: 'ls -a' -> 'Get-ChildItem -a'
+2025-10-08 00:20:17,416 - Osiris.CommandExecutor - INFO - Executing via WSL: ls -a
+2025-10-08 00:20:18,232 - Osiris.CommandExecutor - ERROR - Command failed: ls -a (exit code: 1)
+2025-10-08 00:20:18,233 - Osiris.CommandExecutor - ERROR - Error output: Get-ChildItem : Parameter cannot be processed because the parameter name 'a' is ambiguous. 
+Possible matches include: -Attributes -Directory -File -Hidden -ReadOnly -System.
+At line:1 char:15
++ Get-ChildItem -a
++               ~~
+    + CategoryInfo          : InvalidArgument: (:) [Get-ChildItem], ParameterBindingException
+    + FullyQualifiedErrorId : AmbiguousParameter,Microsoft.PowerShell.Commands.GetChildItemCommand
+ 
+
+2025-10-08 00:20:23,091 - Osiris - INFO - Executing: List directory contents
+2025-10-08 00:20:23,092 - Osiris.CommandExecutor - INFO - Translated: 'ls -l' -> 'Get-ChildItem -l'
+2025-10-08 00:20:23,092 - Osiris.CommandExecutor - INFO - Executing via WSL: ls -l
+2025-10-08 00:20:23,625 - Osiris.CommandExecutor - ERROR - Command failed: ls -l (exit code: 1)
+2025-10-08 00:20:23,626 - Osiris.CommandExecutor - ERROR - Error output: Get-ChildItem : Missing an argument for parameter 'LiteralPath'. Specify a parameter of type 
+'System.String[]' and try again.
+At line:1 char:15
++ Get-ChildItem -l
++               ~~
+    + CategoryInfo          : InvalidArgument: (:) [Get-ChildItem], ParameterBindingException
+    + FullyQualifiedErrorId : MissingArgument,Microsoft.PowerShell.Commands.GetChildItemCommand
+ 
+
+2025-10-08 00:20:25,249 - Osiris - INFO - Executing: Execute man
+2025-10-08 00:20:25,249 - Osiris.CommandExecutor - INFO - Executing command: man
+2025-10-08 00:20:25,281 - Osiris.CommandExecutor - ERROR - Command failed: man (exit code: 1)
+2025-10-08 00:20:25,281 - Osiris.CommandExecutor - ERROR - Error output: 'man' is not recognized as an internal or external command,
+operable program or batch file.
+
+2025-10-08 00:20:35,226 - Osiris - INFO - Executing: Execute rmdir
+2025-10-08 00:20:35,227 - Osiris.CommandExecutor - INFO - Executing command: rmdir
+2025-10-08 00:20:35,255 - Osiris.CommandExecutor - ERROR - Command failed: rmdir (exit code: 1)
+2025-10-08 00:20:35,255 - Osiris.CommandExecutor - ERROR - Error output: The syntax of the command is incorrect.
+
+2025-10-08 00:20:49,421 - Osiris - INFO - Executing: Create empty file or update timestamp
+2025-10-08 00:20:49,422 - Osiris.CommandExecutor - INFO - Translated: 'touch' -> 'New-Item -ItemType File '
+2025-10-08 00:20:49,423 - Osiris.CommandExecutor - INFO - Executing via WSL: touch
+2025-10-08 00:23:20,111 - Osiris.CLI - INFO - CLI Framework initialized: Osiris v0.1.0-team
+2025-10-08 00:23:25,233 - Osiris.CommandExecutor - WARNING - WSL not found - using command translation layer
+2025-10-08 00:23:25,235 - Osiris.CommandExecutor - INFO - CommandExecutor initialized
+2025-10-08 00:23:25,243 - Osiris.SafetyGate - INFO - SafetyGate initialized (enabled: True, sandbox: False)
+2025-10-08 00:23:25,247 - Osiris.SystemMonitor - INFO - SystemMonitor initialized with psutil
+2025-10-08 00:23:25,252 - Osiris - INFO - Osiris Team Shell initialized successfully
+2025-10-08 00:23:27,679 - Osiris - INFO - Executing: List directory contents
+2025-10-08 00:23:27,680 - Osiris.CommandExecutor - INFO - Executing via WSL: ls
+2025-10-08 00:23:28,130 - Osiris.CommandExecutor - INFO - Command succeeded: ls (duration: 0.45s)
+2025-10-08 00:23:30,556 - Osiris - INFO - Executing: List directory contents
+2025-10-08 00:23:30,558 - Osiris.CommandExecutor - INFO - Executing via WSL: ls -l
+2025-10-08 00:23:30,997 - Osiris.CommandExecutor - INFO - Command succeeded: ls -l (duration: 0.44s)
+2025-10-08 00:23:40,223 - Osiris - INFO - Executing: Execute man
+2025-10-08 00:23:40,224 - Osiris.CommandExecutor - INFO - Executing via WSL: man
+2025-10-08 00:23:40,759 - Osiris.CommandExecutor - INFO - Command succeeded: man (duration: 0.54s)
+2025-10-08 00:26:43,982 - Osiris.CLI - INFO - CLI Framework initialized: Osiris v0.1.0-team
+2025-10-08 00:26:43,983 - Osiris - INFO - [OK] Member 1: CLI Framework initialized
+2025-10-08 00:26:49,195 - Osiris.CommandExecutor - WARNING - WSL not found - using command translation layer
+2025-10-08 00:26:49,196 - Osiris.CommandExecutor - INFO - CommandExecutor initialized
+2025-10-08 00:26:49,196 - Osiris - INFO - [OK] Member 2: Command Executor initialized
+2025-10-08 00:26:49,196 - Osiris.SafetyGate - INFO - SafetyGate initialized (enabled: True, sandbox: False)
+2025-10-08 00:26:49,196 - Osiris - INFO - [OK] Member 3: Safety Gate initialized
+2025-10-08 00:26:49,197 - Osiris.SystemMonitor - INFO - SystemMonitor initialized with psutil
+2025-10-08 00:26:49,197 - Osiris - INFO - [OK] Member 4: System Monitor initialized
+2025-10-08 00:26:49,197 - Osiris - INFO - Osiris Team Shell initialized successfully
+2025-10-08 08:44:10,081 - Osiris.CLI - INFO - CLI Framework initialized: Osiris v0.1.0-team
+2025-10-08 08:44:10,082 - Osiris - INFO - [OK] Member 1: CLI Framework initialized
+2025-10-08 08:44:15,319 - Osiris.CommandExecutor - WARNING - WSL not found - using command translation layer
+2025-10-08 08:44:15,320 - Osiris.CommandExecutor - INFO - CommandExecutor initialized
+2025-10-08 08:44:15,320 - Osiris - INFO - [OK] Member 2: Command Executor initialized
+2025-10-08 08:44:15,321 - Osiris.SafetyGate - INFO - SafetyGate initialized (enabled: True, sandbox: False)
+2025-10-08 08:44:15,321 - Osiris - INFO - [OK] Member 3: Safety Gate initialized
+2025-10-08 08:44:15,321 - Osiris.SystemMonitor - INFO - SystemMonitor initialized with psutil
+2025-10-08 08:44:15,322 - Osiris - INFO - [OK] Member 4: System Monitor initialized
+2025-10-08 08:44:15,322 - Osiris - INFO - Osiris Team Shell initialized successfully
+2025-10-08 08:44:49,539 - Osiris - INFO - Executing: List directory contents
+2025-10-08 08:44:49,539 - Osiris.CommandExecutor - INFO - Executing via WSL: ls
+2025-10-08 08:44:50,060 - Osiris.CommandExecutor - INFO - Command succeeded: ls (duration: 0.52s)
+2025-10-08 08:54:37,703 - Osiris.CLI - INFO - CLI Framework initialized: Osiris v0.1.0-team
+2025-10-08 08:54:37,703 - Osiris - INFO - [OK] Member 1: CLI Framework initialized
+2025-10-08 08:54:42,835 - Osiris.CommandExecutor - WARNING - WSL not found - using command translation layer
+2025-10-08 08:54:42,835 - Osiris.CommandExecutor - INFO - CommandExecutor initialized
+2025-10-08 08:54:42,836 - Osiris - INFO - [OK] Member 2: Command Executor initialized
+2025-10-08 08:54:42,836 - Osiris.SafetyGate - INFO - SafetyGate initialized (enabled: True, sandbox: False)
+2025-10-08 08:54:42,836 - Osiris - INFO - [OK] Member 3: Safety Gate initialized
+2025-10-08 08:54:42,836 - Osiris.SystemMonitor - INFO - SystemMonitor initialized with psutil
+2025-10-08 08:54:42,837 - Osiris - INFO - [OK] Member 4: System Monitor initialized
+2025-10-08 08:54:42,837 - Osiris - INFO - Osiris Team Shell initialized successfully
+2025-10-08 08:54:45,948 - Osiris - INFO - Executing: List directory contents
+2025-10-08 08:54:45,949 - Osiris.CommandExecutor - INFO - Executing via WSL: ls
+2025-10-08 08:54:46,515 - Osiris.CommandExecutor - INFO - Command succeeded: ls (duration: 0.57s)
+2025-10-13 20:48:59,065 - Osiris.CLI - INFO - CLI Framework initialized: Osiris v0.1.0-team
+2025-10-13 20:48:59,066 - Osiris - INFO - [OK] Member 1: CLI Framework initialized
+2025-10-13 20:48:59,311 - Osiris.CommandExecutor - INFO - WSL detected and available
+2025-10-13 20:48:59,311 - Osiris.CommandExecutor - INFO - CommandExecutor initialized with WSL support
+2025-10-13 20:48:59,312 - Osiris - INFO - [OK] Member 2: Command Executor initialized
+2025-10-13 20:48:59,312 - Osiris.SafetyGate - INFO - SafetyGate initialized (enabled: True, sandbox: False)
+2025-10-13 20:48:59,313 - Osiris - INFO - [OK] Member 3: Safety Gate initialized
+2025-10-13 20:48:59,313 - Osiris.SystemMonitor - INFO - SystemMonitor initialized with psutil
+2025-10-13 20:48:59,313 - Osiris - INFO - [OK] Member 4: System Monitor initialized
+2025-10-13 20:48:59,314 - Osiris - INFO - Osiris Team Shell initialized successfully
+2025-10-13 20:49:13,217 - Osiris - INFO - Executing: List directory contents
+2025-10-13 20:49:13,218 - Osiris.CommandExecutor - INFO - Executing via WSL: ls
+2025-10-13 20:49:18,750 - Osiris.CommandExecutor - INFO - Command succeeded: ls (duration: 5.53s)
+2025-10-13 20:49:50,387 - Osiris - INFO - Executing: List directory contents
+2025-10-13 20:49:50,388 - Osiris.CommandExecutor - INFO - Executing via WSL: ls -a
+2025-10-13 20:49:51,563 - Osiris.CommandExecutor - INFO - Command succeeded: ls -a (duration: 1.17s)
+2025-10-13 21:02:07,924 - Osiris.CLI - INFO - CLI Framework ready: Osiris v0.1.0-team
+2025-10-13 21:02:07,979 - Osiris.CommandExecutor - INFO - Command Executor ready!
+2025-10-13 21:02:07,982 - Osiris.SafetyGate - INFO - Safety Gate ready (enabled: True, sandbox: False)
+2025-10-13 21:02:07,986 - Osiris.SystemMonitor - INFO - System Monitor ready (using psutil)
+2025-10-13 21:02:07,990 - Osiris - INFO - Osiris Team Shell initialized successfully!
+2025-10-13 21:03:43,899 - Osiris.CLI - INFO - CLI Framework ready: Osiris v0.1.0-team
+2025-10-13 21:03:43,899 - Osiris - INFO - [OK] Iris: CLI Framework initialized
+2025-10-13 21:03:43,899 - Osiris.CommandExecutor - INFO - Command Executor ready!
+2025-10-13 21:03:43,900 - Osiris - INFO - [OK] Shiv: Command Executor initialized
+2025-10-13 21:03:43,900 - Osiris.SafetyGate - INFO - Safety Gate ready (enabled: True, sandbox: False)
+2025-10-13 21:03:43,900 - Osiris - INFO - [OK] Kshitij: Safety Gate initialized
+2025-10-13 21:03:43,901 - Osiris.SystemMonitor - INFO - System Monitor ready (using psutil)
+2025-10-13 21:03:43,901 - Osiris - INFO - [OK] Prabal: System Monitor initialized
+2025-10-13 21:03:43,901 - Osiris - INFO - Osiris Team Shell initialized successfully!
+2025-10-13 21:03:53,024 - Osiris - INFO - Executing: ls- a
+2025-10-13 21:03:53,025 - Osiris.CommandExecutor - INFO - Running: ls- a
+2025-10-13 21:03:53,855 - Osiris.CommandExecutor - ERROR - [FAIL] Failed (exit code: 1)
+2025-10-13 21:04:11,202 - Osiris - INFO - Executing: ls -a
+2025-10-13 21:04:11,210 - Osiris.CommandExecutor - INFO - Running: Get-ChildItem
+2025-10-13 21:04:11,648 - Osiris.CommandExecutor - INFO - [OK] Success (0.44s)
+2025-10-13 21:06:01,915 - Osiris.CLI - INFO - CLI Framework ready: Osiris v0.1.0-team
+2025-10-13 21:06:01,916 - Osiris - INFO - [OK] Iris: CLI Framework initialized
+2025-10-13 21:06:01,916 - Osiris.CommandExecutor - INFO - Command Executor ready!
+2025-10-13 21:06:01,916 - Osiris - INFO - [OK] Shiv: Command Executor initialized
+2025-10-13 21:06:01,917 - Osiris.SafetyGate - INFO - Safety Gate ready (enabled: True, sandbox: False)
+2025-10-13 21:06:01,917 - Osiris - INFO - [OK] Kshitij: Safety Gate initialized
+2025-10-13 21:06:01,917 - Osiris.SystemMonitor - INFO - System Monitor ready (using psutil)
+2025-10-13 21:06:01,917 - Osiris - INFO - [OK] Prabal: System Monitor initialized
+2025-10-13 21:06:01,918 - Osiris - INFO - Osiris Team Shell initialized successfully!
+2025-10-13 21:06:07,420 - Osiris - INFO - Executing: ls -a
+2025-10-13 21:06:07,421 - Osiris.CommandExecutor - INFO - Translated 'ls -a' to 'Get-ChildItem'
+2025-10-13 21:06:07,422 - Osiris.CommandExecutor - INFO - Running: Get-ChildItem
+2025-10-13 21:06:07,877 - Osiris.CommandExecutor - INFO - [OK] Success (0.46s)
+2025-10-13 21:06:17,855 - Osiris - INFO - Executing: pwd
+2025-10-13 21:06:17,856 - Osiris.CommandExecutor - INFO - Translated 'pwd' to 'Get-Location'
+2025-10-13 21:06:17,856 - Osiris.CommandExecutor - INFO - Running: Get-Location
+2025-10-13 21:06:18,241 - Osiris.CommandExecutor - INFO - [OK] Success (0.38s)
+2025-10-13 21:09:37,331 - Osiris.CLI - INFO - CLI Framework ready: Osiris v0.1.0-team
+2025-10-13 21:09:37,332 - Osiris - INFO - [OK] Iris: CLI Framework initialized
+2025-10-13 21:09:37,332 - Osiris.CommandExecutor - INFO - Command Executor ready!
+2025-10-13 21:09:37,332 - Osiris - INFO - [OK] Shiv: Command Executor initialized
+2025-10-13 21:09:37,333 - Osiris.SafetyGate - INFO - Safety Gate ready (enabled: True, sandbox: False)
+2025-10-13 21:09:37,333 - Osiris - INFO - [OK] Kshitij: Safety Gate initialized
+2025-10-13 21:09:37,333 - Osiris.SystemMonitor - INFO - System Monitor ready (using psutil)
+2025-10-13 21:09:37,333 - Osiris - INFO - [OK] Prabal: System Monitor initialized
+2025-10-13 21:09:37,334 - Osiris - INFO - Osiris Team Shell initialized successfully!
+2025-10-13 21:09:53,199 - Osiris.CLI - INFO - CLI Framework ready: Osiris v0.1.0-team
+2025-10-13 21:09:53,199 - Osiris - INFO - [OK] Iris: CLI Framework initialized
+2025-10-13 21:09:53,200 - Osiris.CommandExecutor - INFO - Command Executor ready!
+2025-10-13 21:09:53,200 - Osiris - INFO - [OK] Shiv: Command Executor initialized
+2025-10-13 21:09:53,200 - Osiris.SafetyGate - INFO - Safety Gate ready (enabled: True, sandbox: False)
+2025-10-13 21:09:53,200 - Osiris - INFO - [OK] Kshitij: Safety Gate initialized
+2025-10-13 21:09:53,201 - Osiris.SystemMonitor - INFO - System Monitor ready (using psutil)
+2025-10-13 21:09:53,201 - Osiris - INFO - [OK] Prabal: System Monitor initialized
+2025-10-13 21:09:53,201 - Osiris - INFO - Osiris Team Shell initialized successfully!
+2025-10-13 21:09:58,512 - Osiris - INFO - Executing: ls -a
+2025-10-13 21:09:58,513 - Osiris.CommandExecutor - INFO - Translated 'ls -a' to 'Get-ChildItem'
+2025-10-13 21:09:58,514 - Osiris.CommandExecutor - INFO - Running: Get-ChildItem
+2025-10-13 21:09:58,979 - Osiris.CommandExecutor - INFO - [OK] Success (0.47s)
+2025-10-13 21:30:30,249 - Osiris.CLI - INFO - CLI Framework ready: Osiris v0.1.0-team
+2025-10-13 21:30:30,250 - Osiris - INFO - [OK] Iris: CLI Framework initialized
+2025-10-13 21:30:30,251 - Osiris.CommandExecutor - INFO - Command Executor ready!
+2025-10-13 21:30:30,251 - Osiris - INFO - [OK] Shiv: Command Executor initialized
+2025-10-13 21:30:30,252 - Osiris.SafetyGate - INFO - Safety Gate ready (enabled: True, sandbox: False)
+2025-10-13 21:30:30,252 - Osiris - INFO - [OK] Kshitij: Safety Gate initialized
+2025-10-13 21:30:30,252 - Osiris.SystemMonitor - INFO - System Monitor ready (using psutil)
+2025-10-13 21:30:30,252 - Osiris - INFO - [OK] Prabal: System Monitor initialized
+2025-10-13 21:30:30,252 - Osiris - INFO - Osiris Team Shell initialized successfully!
+2025-10-13 21:30:43,269 - Osiris - INFO - Executing: pwd
+2025-10-13 21:30:43,270 - Osiris.CommandExecutor - INFO - Translated 'pwd' to 'Get-Location'
+2025-10-13 21:30:43,270 - Osiris.CommandExecutor - INFO - Running: Get-Location
+2025-10-13 21:30:43,782 - Osiris.CommandExecutor - INFO - [OK] Success (0.51s)
+2025-10-13 21:31:01,243 - Osiris - INFO - Executing: ls -a
+2025-10-13 21:31:01,244 - Osiris.CommandExecutor - INFO - Translated 'ls -a' to 'Get-ChildItem'
+2025-10-13 21:31:01,244 - Osiris.CommandExecutor - INFO - Running: Get-ChildItem
+2025-10-13 21:31:01,828 - Osiris.CommandExecutor - INFO - [OK] Success (0.58s)
+2025-10-13 21:31:11,733 - Osiris - INFO - Executing: cd ..
+2025-10-13 21:31:11,734 - Osiris.CommandExecutor - INFO - Running: cd ..
+2025-10-13 21:31:12,133 - Osiris.CommandExecutor - INFO - [OK] Success (0.40s)
+2025-10-13 21:31:14,876 - Osiris - INFO - Executing: pwd
+2025-10-13 21:31:14,877 - Osiris.CommandExecutor - INFO - Translated 'pwd' to 'Get-Location'
+2025-10-13 21:31:14,877 - Osiris.CommandExecutor - INFO - Running: Get-Location
+2025-10-13 21:31:15,231 - Osiris.CommandExecutor - INFO - [OK] Success (0.35s)
+2025-10-13 21:32:45,048 - Osiris.CLI - INFO - CLI Framework ready: Osiris v0.1.0-team
+2025-10-13 21:32:45,049 - Osiris - INFO - [OK] Iris: CLI Framework initialized
+2025-10-13 21:32:45,049 - Osiris.CommandExecutor - INFO - Command Executor ready!
+2025-10-13 21:32:45,050 - Osiris - INFO - [OK] Shiv: Command Executor initialized
+2025-10-13 21:32:45,050 - Osiris.SafetyGate - INFO - Safety Gate ready (enabled: True, sandbox: False)
+2025-10-13 21:32:45,050 - Osiris - INFO - [OK] Kshitij: Safety Gate initialized
+2025-10-13 21:32:45,051 - Osiris.SystemMonitor - INFO - System Monitor ready (using psutil)
+2025-10-13 21:32:45,051 - Osiris - INFO - [OK] Prabal: System Monitor initialized
+2025-10-13 21:32:45,051 - Osiris - INFO - Osiris Team Shell initialized successfully!
+2025-10-13 21:33:34,664 - Osiris.CLI - INFO - CLI Framework ready: Osiris v0.1.0-team
+2025-10-13 21:33:34,665 - Osiris - INFO - [OK] Iris: CLI Framework initialized
+2025-10-13 21:33:34,665 - Osiris.CommandExecutor - INFO - Command Executor ready!
+2025-10-13 21:33:34,665 - Osiris - INFO - [OK] Shiv: Command Executor initialized
+2025-10-13 21:33:34,666 - Osiris.SafetyGate - INFO - Safety Gate ready (enabled: True, sandbox: False)
+2025-10-13 21:33:34,666 - Osiris - INFO - [OK] Kshitij: Safety Gate initialized
+2025-10-13 21:33:34,666 - Osiris.SystemMonitor - INFO - System Monitor ready (using psutil)
+2025-10-13 21:33:34,667 - Osiris - INFO - [OK] Prabal: System Monitor initialized
+2025-10-13 21:33:34,667 - Osiris - INFO - Osiris Team Shell initialized successfully!
+2025-10-13 21:33:43,464 - Osiris - INFO - Executing: ls -a
+2025-10-13 21:33:43,465 - Osiris.CommandExecutor - INFO - Translated 'ls -a' to 'Get-ChildItem'
+2025-10-13 21:33:43,465 - Osiris.CommandExecutor - INFO - Running: Get-ChildItem
+2025-10-13 21:33:43,914 - Osiris.CommandExecutor - INFO - [OK] Success (0.45s)
+2025-10-13 21:33:51,610 - Osiris - INFO - Executing: pwd
+2025-10-13 21:33:51,611 - Osiris.CommandExecutor - INFO - Translated 'pwd' to 'Get-Location'
+2025-10-13 21:33:51,611 - Osiris.CommandExecutor - INFO - Running: Get-Location
+2025-10-13 21:33:51,989 - Osiris.CommandExecutor - INFO - [OK] Success (0.38s)
+2025-10-13 21:33:53,989 - Osiris - INFO - Executing: cd
+2025-10-13 21:33:53,990 - Osiris.CommandExecutor - INFO - Running: cd
+2025-10-13 21:33:54,387 - Osiris.CommandExecutor - INFO - [OK] Success (0.40s)
+2025-10-13 21:33:58,648 - Osiris - INFO - Executing: pwd
+2025-10-13 21:33:58,648 - Osiris.CommandExecutor - INFO - Translated 'pwd' to 'Get-Location'
+2025-10-13 21:33:58,649 - Osiris.CommandExecutor - INFO - Running: Get-Location
+2025-10-13 21:33:59,036 - Osiris.CommandExecutor - INFO - [OK] Success (0.39s)
+2025-10-13 21:34:06,731 - Osiris - INFO - Executing: cd ..
+2025-10-13 21:34:06,732 - Osiris.CommandExecutor - INFO - Running: cd ..
+2025-10-13 21:34:07,046 - Osiris.CommandExecutor - INFO - [OK] Success (0.31s)
+2025-10-13 21:34:09,994 - Osiris - INFO - Executing: cd ..
+2025-10-13 21:34:09,994 - Osiris.CommandExecutor - INFO - Running: cd ..
+2025-10-13 21:34:10,389 - Osiris.CommandExecutor - INFO - [OK] Success (0.39s)
+2025-10-13 21:34:12,314 - Osiris - INFO - Executing: pwd
+2025-10-13 21:34:12,315 - Osiris.CommandExecutor - INFO - Translated 'pwd' to 'Get-Location'
+2025-10-13 21:34:12,315 - Osiris.CommandExecutor - INFO - Running: Get-Location
+2025-10-13 21:34:12,666 - Osiris.CommandExecutor - INFO - [OK] Success (0.35s)
+2025-10-13 21:34:19,224 - Osiris - INFO - Executing: ls
+2025-10-13 21:34:19,225 - Osiris.CommandExecutor - INFO - Translated 'ls' to 'Get-ChildItem'
+2025-10-13 21:34:19,225 - Osiris.CommandExecutor - INFO - Running: Get-ChildItem
+2025-10-13 21:34:19,698 - Osiris.CommandExecutor - INFO - [OK] Success (0.47s)
+2025-10-13 21:34:22,222 - Osiris - INFO - Executing: cd
+2025-10-13 21:34:22,223 - Osiris.CommandExecutor - INFO - Running: cd
+2025-10-13 21:34:22,506 - Osiris.CommandExecutor - INFO - [OK] Success (0.28s)
+2025-10-13 22:46:09,303 - Osiris.CLI - INFO - CLI Framework ready: Osiris v0.1.0-team
+2025-10-13 22:46:09,304 - Osiris - INFO - [OK] Iris: CLI Framework initialized
+2025-10-13 22:46:09,304 - Osiris.CommandExecutor - INFO - Command Executor ready!
+2025-10-13 22:46:09,305 - Osiris - INFO - [OK] Shiv: Command Executor initialized
+2025-10-13 22:46:09,305 - Osiris.SafetyGate - INFO - Safety Gate ready (enabled: True, sandbox: False)
+2025-10-13 22:46:09,306 - Osiris - INFO - [OK] Kshitij: Safety Gate initialized
+2025-10-13 22:46:09,306 - Osiris.SystemMonitor - INFO - System Monitor ready (using psutil)
+2025-10-13 22:46:09,306 - Osiris - INFO - [OK] Prabal: System Monitor initialized
+2025-10-13 22:46:09,307 - Osiris - INFO - Osiris Team Shell initialized successfully!
+2025-10-13 22:46:50,839 - Osiris - INFO - Executing: pwd
+2025-10-13 22:46:50,840 - Osiris.CommandExecutor - INFO - Translated 'pwd' to 'Get-Location'
+2025-10-13 22:46:50,840 - Osiris.CommandExecutor - INFO - Running: Get-Location
+2025-10-13 22:46:51,178 - Osiris.CommandExecutor - INFO - [OK] Success (0.34s)
+2025-10-13 22:46:55,047 - Osiris - INFO - Executing: ls
+2025-10-13 22:46:55,047 - Osiris.CommandExecutor - INFO - Translated 'ls' to 'Get-ChildItem'
+2025-10-13 22:46:55,048 - Osiris.CommandExecutor - INFO - Running: Get-ChildItem
+2025-10-13 22:46:55,651 - Osiris.CommandExecutor - INFO - [OK] Success (0.60s)
+2025-10-13 22:46:58,944 - Osiris - INFO - Executing: ls -a
+2025-10-13 22:46:58,944 - Osiris.CommandExecutor - INFO - Translated 'ls -a' to 'Get-ChildItem'
+2025-10-13 22:46:58,944 - Osiris.CommandExecutor - INFO - Running: Get-ChildItem
+2025-10-13 22:46:59,384 - Osiris.CommandExecutor - INFO - [OK] Success (0.44s)
+2025-10-13 22:47:36,855 - Osiris - INFO - Executing: clear
+2025-10-13 22:47:36,856 - Osiris.CommandExecutor - INFO - Translated 'clear' to 'Clear-Host'
+2025-10-13 22:47:36,856 - Osiris.CommandExecutor - INFO - Running: Clear-Host
+2025-10-13 22:47:37,274 - Osiris.CommandExecutor - INFO - [OK] Success (0.42s)
+2025-10-13 23:57:52,269 - Osiris.CLI - INFO - CLI Framework ready: Osiris v0.1.0-team
+2025-10-13 23:57:52,270 - Osiris - INFO - [OK] Iris: CLI Framework initialized
+2025-10-13 23:57:52,270 - Osiris.CommandExecutor - INFO - Command Executor ready!
+2025-10-13 23:57:52,271 - Osiris - INFO - [OK] Shiv: Command Executor initialized
+2025-10-13 23:57:52,271 - Osiris.SafetyGate - INFO - Safety Gate ready (enabled: True, sandbox: False)
+2025-10-13 23:57:52,271 - Osiris - INFO - [OK] Kshitij: Safety Gate initialized
+2025-10-13 23:57:52,272 - Osiris.SystemMonitor - INFO - System Monitor ready (using psutil)
+2025-10-13 23:57:52,272 - Osiris - INFO - [OK] Prabal: System Monitor initialized
+2025-10-13 23:57:52,272 - Osiris - INFO - Osiris Team Shell initialized successfully!
+2025-10-14 00:01:02,725 - Osiris - INFO - Executing: ls -a
+2025-10-14 00:01:02,725 - Osiris.CommandExecutor - INFO - Translated 'ls -a' to 'Get-ChildItem'
+2025-10-14 00:01:02,727 - Osiris.CommandExecutor - INFO - Running: Get-ChildItem
+2025-10-14 00:01:03,294 - Osiris.CommandExecutor - INFO - [OK] Success (0.57s)
+2025-10-14 00:01:21,151 - Osiris - INFO - Executing: make
+2025-10-14 00:01:21,151 - Osiris.CommandExecutor - INFO - Running: make
+2025-10-14 00:01:21,897 - Osiris.CommandExecutor - ERROR - [FAIL] Failed (exit code: 1)
+2025-10-14 00:03:19,815 - Osiris - INFO - Executing: pwd
+2025-10-14 00:03:19,815 - Osiris.CommandExecutor - INFO - Translated 'pwd' to 'Get-Location'
+2025-10-14 00:03:19,816 - Osiris.CommandExecutor - INFO - Running: Get-Location
+2025-10-14 00:03:20,220 - Osiris.CommandExecutor - INFO - [OK] Success (0.40s)
+2025-10-14 00:11:14,656 - Osiris.CLI - INFO - CLI Framework ready: Osiris v0.1.0-team
+2025-10-14 00:11:14,657 - Osiris - INFO - [OK] Iris: CLI Framework initialized
+2025-10-14 00:11:14,657 - Osiris.CommandExecutor - INFO - Command Executor ready!
+2025-10-14 00:11:14,657 - Osiris - INFO - [OK] Shiv: Command Executor initialized
+2025-10-14 00:11:14,658 - Osiris.SafetyGate - INFO - Safety Gate ready (enabled: True, sandbox: False)
+2025-10-14 00:11:14,658 - Osiris - INFO - [OK] Kshitij: Safety Gate initialized
+2025-10-14 00:11:14,659 - Osiris.SystemMonitor - INFO - System Monitor ready (using psutil)
+2025-10-14 00:11:14,659 - Osiris - INFO - [OK] Prabal: System Monitor initialized
+2025-10-14 00:11:14,659 - Osiris - INFO - Osiris Team Shell initialized successfully!
+2025-10-14 00:12:01,672 - Osiris - INFO - Executing: mkdir folder
+2025-10-14 00:12:01,672 - Osiris.CommandExecutor - INFO - Translated 'mkdir folder' to 'New-Item -ItemType Directory "folder" -Force'
+2025-10-14 00:12:01,673 - Osiris.CommandExecutor - INFO - Running: New-Item -ItemType Directory "folder" -Force
+2025-10-14 00:12:02,327 - Osiris.CommandExecutor - INFO - [OK] Success (0.65s)
+2025-10-14 00:13:16,622 - Osiris - INFO - Executing: rm -rf/
+2025-10-14 00:13:16,623 - Osiris.CommandExecutor - INFO - Translated 'rm -rf/' to 'Remove-Item "-rf/" -Force'
+2025-10-14 00:13:16,623 - Osiris.CommandExecutor - INFO - Running: Remove-Item "-rf/" -Force
+2025-10-14 00:13:17,353 - Osiris.CommandExecutor - ERROR - [FAIL] Failed (exit code: 1)
+2025-10-14 00:18:06,650 - Osiris - INFO - Executing: rf rm/
+2025-10-14 00:18:06,650 - Osiris.CommandExecutor - INFO - Running: rf rm/
+2025-10-14 00:18:07,162 - Osiris.CommandExecutor - ERROR - [FAIL] Failed (exit code: 1)
+2025-10-14 00:18:16,482 - Osiris - INFO - Executing: rf -rm/
+2025-10-14 00:18:16,483 - Osiris.CommandExecutor - INFO - Running: rf -rm/
+2025-10-14 00:18:16,988 - Osiris.CommandExecutor - ERROR - [FAIL] Failed (exit code: 1)
+2025-10-14 00:18:31,286 - Osiris - INFO - Executing: rm -rf/
+2025-10-14 00:18:31,287 - Osiris.CommandExecutor - INFO - Translated 'rm -rf/' to 'Remove-Item "-rf/" -Force'
+2025-10-14 00:18:31,287 - Osiris.CommandExecutor - INFO - Running: Remove-Item "-rf/" -Force
+2025-10-14 00:18:31,752 - Osiris.CommandExecutor - ERROR - [FAIL] Failed (exit code: 1)
+2025-10-14 00:19:30,365 - Osiris - INFO - Executing: clear
+2025-10-14 00:19:30,365 - Osiris.CommandExecutor - INFO - Translated 'clear' to 'Clear-Host'
+2025-10-14 00:19:30,366 - Osiris.CommandExecutor - INFO - Running: Clear-Host
+2025-10-14 00:19:30,747 - Osiris.CommandExecutor - INFO - [OK] Success (0.38s)
+2025-10-14 00:22:23,238 - Osiris.CLI - INFO - CLI Framework ready: Osiris v0.1.0-team
+2025-10-14 00:22:23,239 - Osiris - INFO - [OK] Iris: CLI Framework initialized
+2025-10-14 00:22:23,239 - Osiris.CommandExecutor - INFO - Command Executor ready!
+2025-10-14 00:22:23,240 - Osiris - INFO - [OK] Shiv: Command Executor initialized
+2025-10-14 00:22:23,240 - Osiris.SafetyGate - INFO - Safety Gate ready (enabled: True, sandbox: False)
+2025-10-14 00:22:23,240 - Osiris - INFO - [OK] Kshitij: Safety Gate initialized
+2025-10-14 00:22:23,241 - Osiris.SystemMonitor - INFO - System Monitor ready (using psutil)
+2025-10-14 00:22:23,241 - Osiris - INFO - [OK] Prabal: System Monitor initialized
+2025-10-14 00:22:23,241 - Osiris - INFO - Osiris Team Shell initialized successfully!
