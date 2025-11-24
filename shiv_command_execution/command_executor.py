@@ -1,5 +1,6 @@
 import subprocess  # For running commands
 import logging  # For tracking what happens
+import shutil  # For checking tool availability
 from datetime import datetime  # For timestamps
 
 
@@ -23,13 +24,22 @@ class CommandExecutor:
         
         # How long to wait before stopping a command (in seconds)
         self.timeout = config.get('timeout', 300)
+
+        # Whether to prefer running commands via WSL (for Linux-style commands)
+        self.use_wsl = config.get('use_wsl', False)
+
+        # Detect if WSL + bash are actually available before honoring the flag
+        self._wsl_available = self._detect_wsl()
+        if self.use_wsl and not self._wsl_available:
+            self.logger.warning("WSL requested but not available; falling back to PowerShell mode.")
+            self.use_wsl = False
         
         # Keep track of commands we've run
         self.execution_history = []
         
         self.logger.info("Command Executor ready!")
     
-    def execute(self, command, working_dir=None, timeout=None, capture_output=True):
+    def execute(self, command, working_dir=None, timeout=None, capture_output=True, use_wsl: bool = None):
         """
         Run a command and return the result.
         
@@ -44,26 +54,43 @@ class CommandExecutor:
         """
         start_time = datetime.now()
         timeout = timeout or self.timeout
-        
-        # Step 1: Translate Linux commands to Windows PowerShell
+
+        # Decide whether to use WSL for this execution
+        if use_wsl is None:
+            use_wsl = self.use_wsl
+
+        if use_wsl and not self._wsl_available:
+            # Auto-disable WSL if the environment disappeared after init
+            self.logger.warning("WSL execution unavailable; retrying command via PowerShell.")
+            use_wsl = False
+
+        # Step 1: Translate Linux commands to Windows PowerShell (when not using WSL)
         original_command = command
-        if self._is_linux_command(command):
+        if not use_wsl and self._is_linux_command(command):
             command = self._translate_to_windows(command)
             self.logger.info(f"Translated '{original_command}' to '{command}'")
         
-        self.logger.info(f"Running: {command}")
+        self.logger.info(f"Running: {command} (use_wsl={use_wsl})")
         
         try:
-            # Step 2: Run the command using PowerShell
+            # Step 2: Build the underlying process command
+            # When using WSL, run the command through bash so that
+            # it is parsed as a normal shell command with arguments.
+            if use_wsl:
+                popen_cmd = ['wsl', 'bash', '-lc', command]
+            else:
+                popen_cmd = ['powershell.exe', '-Command', command]
+
+            # Step 3: Run the command
             process = subprocess.Popen(
-                ['powershell.exe', '-Command', command],
+                popen_cmd,
                 stdout=subprocess.PIPE if capture_output else None,  # Capture output
                 stderr=subprocess.PIPE if capture_output else None,  # Capture errors
                 text=True,  # Get output as string, not bytes
                 cwd=working_dir  # Run in specified directory
             )
             
-            # Step 3: Wait for command to finish
+            # Step 4: Wait for command to finish
             try:
                 stdout, stderr = process.communicate(timeout=timeout)
             except subprocess.TimeoutExpired:
@@ -73,10 +100,15 @@ class CommandExecutor:
                 stderr = f"Command timeout after {timeout} seconds\n" + (stderr or "")
             
             exit_code = process.returncode
+
+            # Retry automatically on the common "bash not found" style failures
+            if use_wsl and exit_code != 0 and self._should_fallback_to_powershell(stderr):
+                self.logger.warning("WSL failed to run the command; falling back to PowerShell translation.")
+                return self.execute(original_command, working_dir, timeout, capture_output, use_wsl=False)
             end_time = datetime.now()
             duration = (end_time - start_time).total_seconds()
             
-            # Step 4: Build the result dictionary
+            # Step 5: Build the result dictionary
             result = {
                 'command': original_command,
                 'output': stdout or "",
@@ -88,7 +120,7 @@ class CommandExecutor:
                 'end_time': end_time
             }
             
-            # Step 5: Log what happened
+            # Step 6: Log what happened
             if result['success']:
                 self.logger.info(f"[OK] Success ({duration:.2f}s)")
             else:
@@ -100,7 +132,7 @@ class CommandExecutor:
             return result
             
         except Exception as e:
-            # Step 6: Handle errors
+            # Step 7: Handle errors
             end_time = datetime.now()
             duration = (end_time - start_time).total_seconds()
             
@@ -292,6 +324,43 @@ class CommandExecutor:
         else:
             # If we don't know how to translate, return the original
             return command
+
+    def _detect_wsl(self):
+        """Best-effort probe to see whether WSL + bash are runnable."""
+        if shutil.which('wsl') is None:
+            return False
+
+        try:
+            probe = subprocess.run(
+                ['wsl', 'bash', '-lc', 'exit'],
+                stdout=subprocess.PIPE,
+                stderr=subprocess.PIPE,
+                text=True,
+                timeout=5
+            )
+        except Exception as exc:
+            self.logger.debug(f"WSL probe failed: {exc}")
+            return False
+
+        if probe.returncode != 0:
+            error_text = (probe.stderr or '').lower()
+            patterns = ['bash: not found', 'no installed distributions', 'wsl is not enabled']
+            if any(pattern in error_text for pattern in patterns):
+                return False
+        return True
+
+    def _should_fallback_to_powershell(self, stderr):
+        """Detect errors that mean WSL cannot execute the command."""
+        if not stderr:
+            return False
+        message = stderr.lower()
+        fallback_tokens = [
+            'bash: not found',
+            'no installed distributions',
+            'wsl.exe was not found',
+            'the system cannot find the file specified'
+        ]
+        return any(token in message for token in fallback_tokens)
     
     def preview_command(self, command):
         """

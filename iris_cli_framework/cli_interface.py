@@ -144,7 +144,9 @@ Type 'help' for assistance, 'exit' to quit.
         args = parts[1:]    # Everything else
         
         # Built-in commands
-        builtins = ['exit', 'quit', 'help', 'team', 'status', 'metrics']
+        # 'r' is a special RAG-style helper that converts
+        # natural language to shell commands.
+        builtins = ['exit', 'quit', 'help', 'team', 'status', 'metrics', 'r']
         
         return {
             'raw': user_input,
@@ -240,6 +242,11 @@ Type 'help' for assistance, 'exit' to quit.
   status      Show system status
   metrics     Show performance metrics
 
+[bold]Command R (Natural Language):[/bold]
+    r <text>   Ask Command R to understand a request and
+                         suggest a safe shell command (e.g.
+                         'r make a folder test').
+
 [bold]Linux Commands (Supported):[/bold]
   ls          List files and directories
   pwd         Show current directory
@@ -259,6 +266,7 @@ Type 'help' for assistance, 'exit' to quit.
   - All Linux commands are translated to Windows PowerShell
   - Dangerous commands are blocked by the safety gate
   - System metrics are monitored in real-time
+    - Use 'r' for natural language commands (Command R model)
         """
         
         self.console.print(Panel(help_text, box=box.ROUNDED))

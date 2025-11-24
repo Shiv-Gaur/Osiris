@@ -31,6 +31,7 @@ sys.path.insert(0, str(Path(__file__).parent))
 
 # Import our team modules
 from shared.utils import OsirisConfig, setup_logging, CommandHistory
+from shared.command_r import CommandRModel
 from iris_cli_framework import CLIFramework
 from shiv_command_execution import CommandExecutor
 from kshitij_safety_gate import SafetyGate, RiskLevel
@@ -67,6 +68,10 @@ class OsirisTeamShell:
         history_file = self.config.get('shell.history_file', '.osiris_history')
         max_history = self.config.get('shell.max_history', 1000)
         self.history = CommandHistory(history_file, max_history)
+        
+        # Command R - RAG-style natural language command model
+        command_r_config = self.config.get('command_r', {})
+        self.command_r = CommandRModel(command_r_config)
         
         # Initialize all team member modules
         self._initialize_modules()
@@ -182,7 +187,7 @@ class OsirisTeamShell:
     
     def _handle_special_command(self, parsed_command):
         """
-        Handle special built-in commands (team, status, metrics).
+        Handle special built-in commands (team, status, metrics, r).
         
         Args:
             parsed_command: The parsed command dictionary
@@ -200,6 +205,78 @@ class OsirisTeamShell:
         elif cmd == 'metrics':
             # Show detailed metrics
             self._show_metrics()
+
+        elif cmd == 'r':
+            # Command R model: natural language to shell command or help
+            self._handle_rag_command(parsed_command['args'])
+
+    def _handle_rag_command(self, args):
+        """Use Command R to understand natural language and act.
+
+        Usage:
+            r make a folder test
+            r list files
+            r show current directory
+            r delete folder demo
+
+        Command R returns a suggested shell command and explanation,
+        which we confirm with the user, pass through the safety gate,
+        then execute via the CommandExecutor.
+        """
+        if not args:
+            self.cli.display_error("Usage: r <natural language instruction>")
+            return
+
+        instruction = " ".join(args).lower().strip()
+        
+        # Ask Command R model for a suggestion
+        suggestion = self.command_r.suggest(instruction)
+        if suggestion is None:
+            self.cli.display_error("Command R could not understand that request yet.")
+            return
+
+        command = suggestion.command
+        self.console.print(
+            f"[cyan]Command R suggests:[/cyan] [yellow]{command}[/yellow]\n"
+            f"[dim]{suggestion.explanation} (confidence: {suggestion.confidence:.2f})[/dim]"
+        )
+
+        # Simple confirmation prompt
+        self.console.print("Run this command? [y/N] ", end="")
+        try:
+            choice = input().strip().lower()
+        except EOFError:
+            choice = "n"
+
+        if choice not in ("y", "yes"):
+            self.console.print("[yellow]Cancelled.[/yellow]")
+            return
+
+        # Run through safety gate + executor like normal commands
+        safety_result = self.safety_gate.evaluate_command(command)
+
+        if not safety_result['allowed']:
+            self.cli.display_error(f"BLOCKED: {safety_result['reason']}")
+            self.logger.warning(f"Blocked translated command: {command} (Risk: {safety_result['risk_level']})")
+            return
+
+        for warning in safety_result['warnings']:
+            self.console.print(f"[yellow]⚠️  {warning}[/yellow]")
+
+        self.logger.info(f"Executing Command R suggestion: {command}")
+        # For Command R suggestions, run via the Windows shell
+        # (use_wsl=False) so that simple filesystem commands like
+        # mkdir/rm work reliably even if WSL's default shell is
+        # limited or missing bash.
+        result = self.executor.execute(command, use_wsl=False)
+
+        if result['success']:
+            if result['output'].strip():
+                self.console.print(result['output'])
+        else:
+            self.cli.display_error(f"Command failed (exit code: {result['exit_code']})")
+            if result['error'].strip():
+                self.console.print(f"[red]{result['error']}[/red]")
     
     def _show_team_info(self):
         """

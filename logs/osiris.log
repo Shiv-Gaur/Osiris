@@ -385,3 +385,239 @@ operable program or batch file.
 2025-10-14 00:22:23,241 - Osiris.SystemMonitor - INFO - System Monitor ready (using psutil)
 2025-10-14 00:22:23,241 - Osiris - INFO - [OK] Prabal: System Monitor initialized
 2025-10-14 00:22:23,241 - Osiris - INFO - Osiris Team Shell initialized successfully!
+2025-10-14 22:17:01,537 - Osiris.CLI - INFO - CLI Framework ready: Osiris v0.1.0-team
+2025-10-14 22:17:01,539 - Osiris - INFO - [OK] Iris: CLI Framework initialized
+2025-10-14 22:17:01,539 - Osiris.CommandExecutor - INFO - Command Executor ready!
+2025-10-14 22:17:01,539 - Osiris - INFO - [OK] Shiv: Command Executor initialized
+2025-10-14 22:17:01,540 - Osiris.SafetyGate - INFO - Safety Gate ready (enabled: True, sandbox: False)
+2025-10-14 22:17:01,540 - Osiris - INFO - [OK] Kshitij: Safety Gate initialized
+2025-10-14 22:17:01,540 - Osiris.SystemMonitor - INFO - System Monitor ready (using psutil)
+2025-10-14 22:17:01,540 - Osiris - INFO - [OK] Prabal: System Monitor initialized
+2025-10-14 22:17:01,541 - Osiris - INFO - Osiris Team Shell initialized successfully!
+2025-10-14 22:50:57,195 - Osiris.CLI - INFO - CLI Framework ready: Osiris v0.1.0-team
+2025-10-14 22:50:57,195 - Osiris - INFO - [OK] Iris: CLI Framework initialized
+2025-10-14 22:50:57,196 - Osiris.CommandExecutor - INFO - Command Executor ready!
+2025-10-14 22:50:57,196 - Osiris - INFO - [OK] Shiv: Command Executor initialized
+2025-10-14 22:50:57,196 - Osiris.SafetyGate - INFO - Safety Gate ready (enabled: True, sandbox: False)
+2025-10-14 22:50:57,196 - Osiris - INFO - [OK] Kshitij: Safety Gate initialized
+2025-10-14 22:50:57,197 - Osiris.SystemMonitor - INFO - System Monitor ready (using psutil)
+2025-10-14 22:50:57,197 - Osiris - INFO - [OK] Prabal: System Monitor initialized
+2025-10-14 22:50:57,197 - Osiris - INFO - Osiris Team Shell initialized successfully!
+2025-11-19 15:55:09,142 - Osiris.CLI - INFO - CLI Framework ready: Osiris v0.1.0-team
+2025-11-19 15:55:09,142 - Osiris - INFO - [OK] Iris: CLI Framework initialized
+2025-11-19 15:55:09,143 - Osiris.CommandExecutor - INFO - Command Executor ready!
+2025-11-19 15:55:09,143 - Osiris - INFO - [OK] Shiv: Command Executor initialized
+2025-11-19 15:55:09,143 - Osiris.SafetyGate - INFO - Safety Gate ready (enabled: True, sandbox: False)
+2025-11-19 15:55:09,143 - Osiris - INFO - [OK] Kshitij: Safety Gate initialized
+2025-11-19 15:55:09,143 - Osiris.SystemMonitor - INFO - System Monitor ready (using psutil)
+2025-11-19 15:55:09,143 - Osiris - INFO - [OK] Prabal: System Monitor initialized
+2025-11-19 15:55:09,143 - Osiris - INFO - Osiris Team Shell initialized successfully!
+2025-11-19 15:55:46,943 - Osiris - INFO - Executing: hello
+2025-11-19 15:55:46,943 - Osiris.CommandExecutor - INFO - Running: hello
+2025-11-19 15:55:48,441 - Osiris.CommandExecutor - ERROR - [FAIL] Failed (exit code: 1)
+2025-11-19 15:55:53,517 - Osiris - INFO - Executing: make a folder
+2025-11-19 15:55:53,518 - Osiris.CommandExecutor - INFO - Running: make a folder
+2025-11-19 15:55:54,655 - Osiris.CommandExecutor - ERROR - [FAIL] Failed (exit code: 1)
+2025-11-19 16:08:55,979 - Osiris.CLI - INFO - CLI Framework ready: Osiris v0.1.0-team
+2025-11-19 16:08:55,979 - Osiris - INFO - [OK] Iris: CLI Framework initialized
+2025-11-19 16:08:55,980 - Osiris.CommandExecutor - INFO - Command Executor ready!
+2025-11-19 16:08:55,980 - Osiris - INFO - [OK] Shiv: Command Executor initialized
+2025-11-19 16:08:55,980 - Osiris.SafetyGate - INFO - Safety Gate ready (enabled: True, sandbox: False)
+2025-11-19 16:08:55,981 - Osiris - INFO - [OK] Kshitij: Safety Gate initialized
+2025-11-19 16:08:55,981 - Osiris.SystemMonitor - INFO - System Monitor ready (using psutil)
+2025-11-19 16:08:55,981 - Osiris - INFO - [OK] Prabal: System Monitor initialized
+2025-11-19 16:08:55,981 - Osiris - INFO - Osiris Team Shell initialized successfully!
+2025-11-19 16:09:05,175 - Osiris - INFO - Executing: make a folder
+2025-11-19 16:09:05,175 - Osiris.CommandExecutor - INFO - Running: make a folder (use_wsl=True)
+2025-11-19 16:09:08,880 - Osiris.CommandExecutor - ERROR - [FAIL] Failed (exit code: 127)
+2025-11-19 16:09:29,633 - Osiris - INFO - Executing: ls
+2025-11-19 16:09:29,633 - Osiris.CommandExecutor - INFO - Running: ls (use_wsl=True)
+2025-11-19 16:09:30,006 - Osiris.CommandExecutor - INFO - [OK] Success (0.37s)
+2025-11-19 16:09:39,512 - Osiris - INFO - Executing: pwd
+2025-11-19 16:09:39,512 - Osiris.CommandExecutor - INFO - Running: pwd (use_wsl=True)
+2025-11-19 16:09:39,612 - Osiris.CommandExecutor - INFO - [OK] Success (0.10s)
+2025-11-19 16:10:43,787 - Osiris - INFO - Executing Command R suggestion: mkdir new_folder
+2025-11-19 16:10:43,788 - Osiris.CommandExecutor - INFO - Running: mkdir new_folder (use_wsl=True)
+2025-11-19 16:10:44,235 - Osiris.CommandExecutor - ERROR - [FAIL] Failed (exit code: 127)
+2025-11-19 16:11:59,676 - Osiris - INFO - Executing: python osiris_team.py
+2025-11-19 16:11:59,676 - Osiris.CommandExecutor - INFO - Running: python osiris_team.py (use_wsl=True)
+2025-11-19 16:12:01,743 - Osiris.CommandExecutor - ERROR - [FAIL] Failed (exit code: 127)
+2025-11-19 16:12:17,723 - Osiris.CLI - INFO - CLI Framework ready: Osiris v0.1.0-team
+2025-11-19 16:12:17,724 - Osiris - INFO - [OK] Iris: CLI Framework initialized
+2025-11-19 16:12:17,724 - Osiris.CommandExecutor - INFO - Command Executor ready!
+2025-11-19 16:12:17,724 - Osiris - INFO - [OK] Shiv: Command Executor initialized
+2025-11-19 16:12:17,724 - Osiris.SafetyGate - INFO - Safety Gate ready (enabled: True, sandbox: False)
+2025-11-19 16:12:17,724 - Osiris - INFO - [OK] Kshitij: Safety Gate initialized
+2025-11-19 16:12:17,724 - Osiris.SystemMonitor - INFO - System Monitor ready (using psutil)
+2025-11-19 16:12:17,725 - Osiris - INFO - [OK] Prabal: System Monitor initialized
+2025-11-19 16:12:17,725 - Osiris - INFO - Osiris Team Shell initialized successfully!
+2025-11-19 16:12:28,624 - Osiris - INFO - Executing Command R suggestion: mkdir new_folder
+2025-11-19 16:12:28,624 - Osiris.CommandExecutor - INFO - Running: mkdir new_folder (use_wsl=True)
+2025-11-19 16:12:29,050 - Osiris.CommandExecutor - ERROR - [FAIL] Failed (exit code: 127)
+2025-11-19 16:12:50,947 - Osiris.CLI - INFO - CLI Framework ready: Osiris v0.1.0-team
+2025-11-19 16:12:50,947 - Osiris - INFO - [OK] Iris: CLI Framework initialized
+2025-11-19 16:12:50,947 - Osiris.CommandExecutor - INFO - Command Executor ready!
+2025-11-19 16:12:50,947 - Osiris - INFO - [OK] Shiv: Command Executor initialized
+2025-11-19 16:12:50,948 - Osiris.SafetyGate - INFO - Safety Gate ready (enabled: True, sandbox: False)
+2025-11-19 16:12:50,948 - Osiris - INFO - [OK] Kshitij: Safety Gate initialized
+2025-11-19 16:12:50,948 - Osiris.SystemMonitor - INFO - System Monitor ready (using psutil)
+2025-11-19 16:12:50,948 - Osiris - INFO - [OK] Prabal: System Monitor initialized
+2025-11-19 16:12:50,948 - Osiris - INFO - Osiris Team Shell initialized successfully!
+2025-11-19 16:13:00,563 - Osiris - INFO - Executing Command R suggestion: mkdir hello
+2025-11-19 16:13:00,563 - Osiris.CommandExecutor - INFO - Running: mkdir hello (use_wsl=True)
+2025-11-19 16:13:00,985 - Osiris.CommandExecutor - ERROR - [FAIL] Failed (exit code: 127)
+2025-11-19 16:13:30,856 - Osiris.CLI - INFO - CLI Framework ready: Osiris v0.1.0-team
+2025-11-19 16:13:30,856 - Osiris - INFO - [OK] Iris: CLI Framework initialized
+2025-11-19 16:13:30,856 - Osiris.CommandExecutor - INFO - Command Executor ready!
+2025-11-19 16:13:30,856 - Osiris - INFO - [OK] Shiv: Command Executor initialized
+2025-11-19 16:13:30,857 - Osiris.SafetyGate - INFO - Safety Gate ready (enabled: True, sandbox: False)
+2025-11-19 16:13:30,857 - Osiris - INFO - [OK] Kshitij: Safety Gate initialized
+2025-11-19 16:13:30,857 - Osiris.SystemMonitor - INFO - System Monitor ready (using psutil)
+2025-11-19 16:13:30,857 - Osiris - INFO - [OK] Prabal: System Monitor initialized
+2025-11-19 16:13:30,857 - Osiris - INFO - Osiris Team Shell initialized successfully!
+2025-11-19 16:13:43,686 - Osiris - INFO - Executing Command R suggestion: mkdir hello
+2025-11-19 16:13:43,687 - Osiris.CommandExecutor - INFO - Translated 'mkdir hello' to 'New-Item -ItemType Directory "hello" -Force'
+2025-11-19 16:13:43,687 - Osiris.CommandExecutor - INFO - Running: New-Item -ItemType Directory "hello" -Force (use_wsl=False)
+2025-11-19 16:13:44,853 - Osiris.CommandExecutor - INFO - [OK] Success (1.17s)
+2025-11-19 16:15:18,624 - Osiris.CLI - INFO - CLI Framework ready: Osiris v0.1.0-team
+2025-11-19 16:15:18,624 - Osiris - INFO - [OK] Iris: CLI Framework initialized
+2025-11-19 16:15:18,624 - Osiris.CommandExecutor - INFO - Command Executor ready!
+2025-11-19 16:15:18,625 - Osiris - INFO - [OK] Shiv: Command Executor initialized
+2025-11-19 16:15:18,625 - Osiris.SafetyGate - INFO - Safety Gate ready (enabled: True, sandbox: False)
+2025-11-19 16:15:18,625 - Osiris - INFO - [OK] Kshitij: Safety Gate initialized
+2025-11-19 16:15:18,625 - Osiris.SystemMonitor - INFO - System Monitor ready (using psutil)
+2025-11-19 16:15:18,625 - Osiris - INFO - [OK] Prabal: System Monitor initialized
+2025-11-19 16:15:18,625 - Osiris - INFO - Osiris Team Shell initialized successfully!
+2025-11-19 16:15:29,093 - Osiris - INFO - Executing Command R suggestion: ls
+2025-11-19 16:15:29,093 - Osiris.CommandExecutor - INFO - Translated 'ls' to 'Get-ChildItem'
+2025-11-19 16:15:29,094 - Osiris.CommandExecutor - INFO - Running: Get-ChildItem (use_wsl=False)
+2025-11-19 16:15:30,013 - Osiris.CommandExecutor - INFO - [OK] Success (0.92s)
+2025-11-19 16:31:56,893 - Osiris.CLI - INFO - CLI Framework ready: Osiris v0.1.0-team
+2025-11-19 16:31:56,894 - Osiris - INFO - [OK] Iris: CLI Framework initialized
+2025-11-19 16:31:56,894 - Osiris.CommandExecutor - INFO - Command Executor ready!
+2025-11-19 16:31:56,894 - Osiris - INFO - [OK] Shiv: Command Executor initialized
+2025-11-19 16:31:56,894 - Osiris.SafetyGate - INFO - Safety Gate ready (enabled: True, sandbox: False)
+2025-11-19 16:31:56,895 - Osiris - INFO - [OK] Kshitij: Safety Gate initialized
+2025-11-19 16:31:56,895 - Osiris.SystemMonitor - INFO - System Monitor ready (using psutil)
+2025-11-19 16:31:56,895 - Osiris - INFO - [OK] Prabal: System Monitor initialized
+2025-11-19 16:31:56,895 - Osiris - INFO - Osiris Team Shell initialized successfully!
+2025-11-19 16:32:09,922 - Osiris - INFO - Executing: hello
+2025-11-19 16:32:09,922 - Osiris.CommandExecutor - INFO - Running: hello (use_wsl=True)
+2025-11-19 16:32:13,153 - Osiris.CommandExecutor - ERROR - [FAIL] Failed (exit code: 127)
+2025-11-19 17:32:23,203 - Osiris.CLI - INFO - CLI Framework ready: Osiris v0.1.0-team
+2025-11-19 17:32:23,204 - Osiris - INFO - [OK] Iris: CLI Framework initialized
+2025-11-19 17:32:23,205 - Osiris.CommandExecutor - INFO - Command Executor ready!
+2025-11-19 17:32:23,206 - Osiris - INFO - [OK] Shiv: Command Executor initialized
+2025-11-19 17:32:23,206 - Osiris.SafetyGate - INFO - Safety Gate ready (enabled: True, sandbox: False)
+2025-11-19 17:32:23,206 - Osiris - INFO - [OK] Kshitij: Safety Gate initialized
+2025-11-19 17:32:23,207 - Osiris.SystemMonitor - INFO - System Monitor ready (using psutil)
+2025-11-19 17:32:23,207 - Osiris - INFO - [OK] Prabal: System Monitor initialized
+2025-11-19 17:32:23,208 - Osiris - INFO - Osiris Team Shell initialized successfully!
+2025-11-19 20:07:02,502 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-19 20:07:18,412 - Osiris.CLI - INFO - CLI Framework ready: Osiris v0.1.0-team
+2025-11-19 20:07:18,412 - Osiris - INFO - [OK] Iris: CLI Framework initialized
+2025-11-19 20:07:18,413 - Osiris.CommandExecutor - INFO - Command Executor ready!
+2025-11-19 20:07:18,413 - Osiris - INFO - [OK] Shiv: Command Executor initialized
+2025-11-19 20:07:18,414 - Osiris.SafetyGate - INFO - Safety Gate ready (enabled: True, sandbox: False)
+2025-11-19 20:07:18,414 - Osiris - INFO - [OK] Kshitij: Safety Gate initialized
+2025-11-19 20:07:18,415 - Osiris.SystemMonitor - INFO - System Monitor ready (using psutil)
+2025-11-19 20:07:18,415 - Osiris - INFO - [OK] Prabal: System Monitor initialized
+2025-11-19 20:07:18,416 - Osiris - INFO - Osiris Team Shell initialized successfully!
+2025-11-19 20:07:29,302 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-19 20:07:33,303 - Osiris.CLI - INFO - CLI Framework ready: Osiris v0.1.0-team
+2025-11-19 20:07:33,303 - Osiris - INFO - [OK] Iris: CLI Framework initialized
+2025-11-19 20:07:33,304 - Osiris.CommandExecutor - INFO - Command Executor ready!
+2025-11-19 20:07:33,304 - Osiris - INFO - [OK] Shiv: Command Executor initialized
+2025-11-19 20:07:33,305 - Osiris.SafetyGate - INFO - Safety Gate ready (enabled: True, sandbox: False)
+2025-11-19 20:07:33,305 - Osiris - INFO - [OK] Kshitij: Safety Gate initialized
+2025-11-19 20:07:33,305 - Osiris.SystemMonitor - INFO - System Monitor ready (using psutil)
+2025-11-19 20:07:33,306 - Osiris - INFO - [OK] Prabal: System Monitor initialized
+2025-11-19 20:07:33,306 - Osiris - INFO - Osiris Team Shell initialized successfully!
+2025-11-19 20:09:32,499 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-19 20:09:36,818 - Osiris.CLI - INFO - CLI Framework ready: Osiris v0.1.0-team
+2025-11-19 20:09:36,819 - Osiris - INFO - [OK] Iris: CLI Framework initialized
+2025-11-19 20:09:36,819 - Osiris.CommandExecutor - INFO - Command Executor ready!
+2025-11-19 20:09:36,819 - Osiris - INFO - [OK] Shiv: Command Executor initialized
+2025-11-19 20:09:36,820 - Osiris.SafetyGate - INFO - Safety Gate ready (enabled: True, sandbox: False)
+2025-11-19 20:09:36,820 - Osiris - INFO - [OK] Kshitij: Safety Gate initialized
+2025-11-19 20:09:36,820 - Osiris.SystemMonitor - INFO - System Monitor ready (using psutil)
+2025-11-19 20:09:36,821 - Osiris - INFO - [OK] Prabal: System Monitor initialized
+2025-11-19 20:09:36,821 - Osiris - INFO - Osiris Team Shell initialized successfully!
+2025-11-19 20:10:35,267 - Osiris - INFO - Executing: ls
+2025-11-19 20:10:35,268 - Osiris.CommandExecutor - INFO - Running: ls (use_wsl=True)
+2025-11-19 20:10:40,793 - Osiris.CommandExecutor - ERROR - [FAIL] Failed (exit code: 127)
+2025-11-19 20:10:50,637 - Osiris - INFO - Executing: mkdir
+2025-11-19 20:10:50,638 - Osiris.CommandExecutor - INFO - Running: mkdir (use_wsl=True)
+2025-11-19 20:10:50,938 - Osiris.CommandExecutor - ERROR - [FAIL] Failed (exit code: 127)
+2025-11-19 20:13:32,508 - Osiris - INFO - Executing Command R suggestion: pwd
+2025-11-19 20:13:32,508 - Osiris.CommandExecutor - INFO - Translated 'pwd' to 'Get-Location'
+2025-11-19 20:13:32,509 - Osiris.CommandExecutor - INFO - Running: Get-Location (use_wsl=False)
+2025-11-19 20:13:33,606 - Osiris.CommandExecutor - INFO - [OK] Success (1.10s)
+2025-11-19 20:14:03,869 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-19 20:14:07,820 - Osiris.CLI - INFO - CLI Framework ready: Osiris v0.1.0-team
+2025-11-19 20:14:07,820 - Osiris - INFO - [OK] Iris: CLI Framework initialized
+2025-11-19 20:14:11,653 - Osiris.CommandExecutor - WARNING - WSL requested but not available; falling back to PowerShell mode.
+2025-11-19 20:14:11,654 - Osiris.CommandExecutor - INFO - Command Executor ready!
+2025-11-19 20:14:11,654 - Osiris - INFO - [OK] Shiv: Command Executor initialized
+2025-11-19 20:14:11,655 - Osiris.SafetyGate - INFO - Safety Gate ready (enabled: True, sandbox: False)
+2025-11-19 20:14:11,655 - Osiris - INFO - [OK] Kshitij: Safety Gate initialized
+2025-11-19 20:14:11,656 - Osiris.SystemMonitor - INFO - System Monitor ready (using psutil)
+2025-11-19 20:14:11,657 - Osiris - INFO - [OK] Prabal: System Monitor initialized
+2025-11-19 20:14:11,657 - Osiris - INFO - Osiris Team Shell initialized successfully!
+2025-11-19 20:14:50,657 - Osiris - INFO - Executing: mkdir
+2025-11-19 20:14:50,658 - Osiris.CommandExecutor - INFO - Translated 'mkdir' to 'Write-Host "mkdir: missing directory name"'
+2025-11-19 20:14:50,658 - Osiris.CommandExecutor - INFO - Running: Write-Host "mkdir: missing directory name" (use_wsl=False)
+2025-11-19 20:14:51,360 - Osiris.CommandExecutor - INFO - [OK] Success (0.70s)
+2025-11-19 20:14:57,673 - Osiris - INFO - Executing: ls
+2025-11-19 20:14:57,674 - Osiris.CommandExecutor - INFO - Translated 'ls' to 'Get-ChildItem'
+2025-11-19 20:14:57,674 - Osiris.CommandExecutor - INFO - Running: Get-ChildItem (use_wsl=False)
+2025-11-19 20:14:58,291 - Osiris.CommandExecutor - INFO - [OK] Success (0.62s)
+2025-11-19 20:15:19,087 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-19 20:15:23,266 - Osiris.CLI - INFO - CLI Framework ready: Osiris v0.1.0-team
+2025-11-19 20:15:23,266 - Osiris - INFO - [OK] Iris: CLI Framework initialized
+2025-11-19 20:15:24,109 - Osiris.CommandExecutor - WARNING - WSL requested but not available; falling back to PowerShell mode.
+2025-11-19 20:15:24,110 - Osiris.CommandExecutor - INFO - Command Executor ready!
+2025-11-19 20:15:24,110 - Osiris - INFO - [OK] Shiv: Command Executor initialized
+2025-11-19 20:15:24,110 - Osiris.SafetyGate - INFO - Safety Gate ready (enabled: True, sandbox: False)
+2025-11-19 20:15:24,111 - Osiris - INFO - [OK] Kshitij: Safety Gate initialized
+2025-11-19 20:15:24,111 - Osiris.SystemMonitor - INFO - System Monitor ready (using psutil)
+2025-11-19 20:15:24,111 - Osiris - INFO - [OK] Prabal: System Monitor initialized
+2025-11-19 20:15:24,112 - Osiris - INFO - Osiris Team Shell initialized successfully!
+2025-11-19 20:15:38,584 - Osiris - INFO - Executing: mkdir
+2025-11-19 20:15:38,584 - Osiris.CommandExecutor - INFO - Translated 'mkdir' to 'Write-Host "mkdir: missing directory name"'
+2025-11-19 20:15:38,585 - Osiris.CommandExecutor - INFO - Running: Write-Host "mkdir: missing directory name" (use_wsl=False)
+2025-11-19 20:15:39,022 - Osiris.CommandExecutor - INFO - [OK] Success (0.44s)
+2025-11-19 20:32:23,011 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-19 20:32:26,928 - Osiris.CLI - INFO - CLI Framework ready: Osiris v0.1.0-team
+2025-11-19 20:32:26,929 - Osiris - INFO - [OK] Iris: CLI Framework initialized
+2025-11-19 20:32:30,763 - Osiris.CommandExecutor - WARNING - WSL requested but not available; falling back to PowerShell mode.
+2025-11-19 20:32:30,764 - Osiris.CommandExecutor - INFO - Command Executor ready!
+2025-11-19 20:32:30,764 - Osiris - INFO - [OK] Shiv: Command Executor initialized
+2025-11-19 20:32:30,765 - Osiris.SafetyGate - INFO - Safety Gate ready (enabled: True, sandbox: False)
+2025-11-19 20:32:30,765 - Osiris - INFO - [OK] Kshitij: Safety Gate initialized
+2025-11-19 20:32:30,766 - Osiris.SystemMonitor - INFO - System Monitor ready (using psutil)
+2025-11-19 20:32:30,766 - Osiris - INFO - [OK] Prabal: System Monitor initialized
+2025-11-19 20:32:30,767 - Osiris - INFO - Osiris Team Shell initialized successfully!
+2025-11-19 20:41:10,292 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-11-19 20:41:14,019 - Osiris.CLI - INFO - CLI Framework ready: Osiris v0.1.0-team
+2025-11-19 20:41:14,019 - Osiris - INFO - [OK] Iris: CLI Framework initialized
+2025-11-19 20:41:17,522 - Osiris.CommandExecutor - WARNING - WSL requested but not available; falling back to PowerShell mode.
+2025-11-19 20:41:17,522 - Osiris.CommandExecutor - INFO - Command Executor ready!
+2025-11-19 20:41:17,522 - Osiris - INFO - [OK] Shiv: Command Executor initialized
+2025-11-19 20:41:17,523 - Osiris.SafetyGate - INFO - Safety Gate ready (enabled: True, sandbox: False)
+2025-11-19 20:41:17,523 - Osiris - INFO - [OK] Kshitij: Safety Gate initialized
+2025-11-19 20:41:17,524 - Osiris.SystemMonitor - INFO - System Monitor ready (using psutil)
+2025-11-19 20:41:17,524 - Osiris - INFO - [OK] Prabal: System Monitor initialized
+2025-11-19 20:41:17,524 - Osiris - INFO - Osiris Team Shell initialized successfully!
+2025-11-19 20:41:32,969 - Osiris - INFO - Executing: pwd
+2025-11-19 20:41:32,970 - Osiris.CommandExecutor - INFO - Translated 'pwd' to 'Get-Location'
+2025-11-19 20:41:32,970 - Osiris.CommandExecutor - INFO - Running: Get-Location (use_wsl=False)
+2025-11-19 20:41:33,363 - Osiris.CommandExecutor - INFO - [OK] Success (0.39s)
+2025-11-19 20:42:39,214 - Osiris - INFO - Executing Command R suggestion: pwd
+2025-11-19 20:42:39,215 - Osiris.CommandExecutor - INFO - Translated 'pwd' to 'Get-Location'
+2025-11-19 20:42:39,215 - Osiris.CommandExecutor - INFO - Running: Get-Location (use_wsl=False)
+2025-11-19 20:42:39,544 - Osiris.CommandExecutor - INFO - [OK] Success (0.33s)
+2025-11-19 20:44:48,433 - Osiris - INFO - Executing Command R suggestion: ls
+2025-11-19 20:44:48,434 - Osiris.CommandExecutor - INFO - Translated 'ls' to 'Get-ChildItem'
+2025-11-19 20:44:48,434 - Osiris.CommandExecutor - INFO - Running: Get-ChildItem (use_wsl=False)
+2025-11-19 20:44:48,853 - Osiris.CommandExecutor - INFO - [OK] Success (0.42s)

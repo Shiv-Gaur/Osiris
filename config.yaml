@@ -44,6 +44,10 @@ command_execution:
   capture_output: true
   use_wsl: true  # Enable WSL for Linux commands on Windows (development mode)
 
+# Command R - Natural language command model
+command_r:
+  enabled: true  # Set to false to disable Command R
+
 # Logging Configuration
 logging:
   level: "INFO"

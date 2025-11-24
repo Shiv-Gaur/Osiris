@@ -1,0 +1,6 @@
+chromadb
+llama-index
+requests
+rich
+psutil
+PyYAML
